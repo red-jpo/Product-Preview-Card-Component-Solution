@@ -1,0 +1,156 @@
+/* Set default margin to 0 for all elements */
+* {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    min-height: 100vh;
+    /*Ensures that the height of the webpage is always at least the height of the viewport*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    /*Items are centered vertically within the container - cross-axis*/
+    justify-content: center;
+    /*Items are centered horizontally within the container - main axis.*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 20px;
+    /*"15px" on the top and bottom, and "20px" on the left and right.*/
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 45%, 20%);
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh;
+    /*sets the height to 98% of the viewport height so the footer appears in the page*/
+    padding: 0 10%;
+    align-self: center;
+}
+
+section {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*Sets up a grid layout with two columns of equal width*/
+    max-width: 600px;
+}
+
+.image-container img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    max-width: 100%;
+    display: flex;
+}
+
+.item-type {
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+.text-container {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*evenly spaces the flex items along the main axis of the container, the first 
+    and last items aligned to the edges of the container*/
+}
+
+.prices {
+    display: flex;
+    justify-content: left;
+}
+
+.old-price {
+    text-decoration: line-through;
+    padding-left: 10%;
+    align-self: center;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+
+}
+
+.add-to-cart {
+    padding-left: 15px;
+}
+
+.attribution {
+    font-family: 'Montserrat', sans-serif;
+    height: 2vh;
+    /*sets the height to 2% of the viewport height to fit with the main element 
+    without creating a scroll bar*/
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(158, 36%, 37%);
+}
+
+@media only screen and (max-width: 500px) {
+    /*Apply the styles bellow to devices with a maximum screen of 500 pixels*/
+
+    section {
+        grid-template-columns: 1fr;
+        /*Rewrites previous rule, sets a layout with one column*/
+    }
+
+    .image-container img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        /*Rewrites previous rule, removes the border-radius*/
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text-container {
+        padding: 20px;
+    }
+
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .prices {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}

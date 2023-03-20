@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport meta tag tells the browser how to display the content based on the device width. -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- This link tag specifies the website's favicon, which is the small image displayed in the browser's tab. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- These three link tags load the "Fraunces" and "Montserrat" fonts from Google Fonts. -->
+
+    <link rel="stylesheet" href="Style.css">
+    <!-- This link tag specifies the CSS file that contains the styles for this webpage. -->
+
+    <title>Product preview card component | Frontend Mentor</title>
+    <!-- The title tag specifies the title of the page, which is displayed in the browser's tab. -->
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="image-container">
+                <picture>
+                    <source media="(max-width:500px)" srcset="./images/image-product-mobile.jpg">
+                    <img src="./images/image-product-desktop.jpg" alt="Gabrielle Parfum" style="width:auto;">
+                </picture>
+                <!-- The picture element and source tag allow the browser to choose the appropriate image to display based on the device's screen size. -->
+            </div>
+
+            <div class="text-container">
+                <p class="item-type">perfume</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                    Perfumer-Creator for the House of CHANEL.</p>
+
+                <div class="prices">
+                    <span class="new-price">$149.99</span>
+                    <span class="old-price">$169.99</span>
+                </div>
+                <!-- The span tag specifies a small piece of text that can be styled separately from the rest of the content. -->
+
+                <button>
+                    <i> <img src="images/icon-cart.svg" alt="shopping cart icon"></i>
+                    <span class="add-to-cart">Add to Cart</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/red-jpo">Red.jpo</a>.
+            <!-- The footer refers to the line of text at the bottom of the page. -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
