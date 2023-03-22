@@ -118,7 +118,7 @@ section {
     color: hsl(158, 36%, 37%);
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 699px) {
     /*Apply the styles bellow to devices with a maximum screen of 500 pixels*/
 
     section {
