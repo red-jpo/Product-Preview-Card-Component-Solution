@@ -43,8 +43,5 @@ This project is the solution for [Frontend Mentor Product Preview Card Component
 
 ## Final Notes
 
-I'm really pleased with the final result of the project, specially with the responsiveness of the layout, it was my first project with an adaptable layout so this was completely unfamiliar territory. It was really challenging but i beat it and it turned out exactly as i wanted, except for some issues between 501-610px width but it's okay, when I find a way to fix it (fixed), I'll update the code. I had fun assembling this puzzle and learned a lot in the process. 
-
-
-
+I'm really pleased with the final result of the project, specially with the responsiveness of the layout, it was my first project with an adaptable layout so this was completely unfamiliar territory. It was really challenging but i beat it and it turned out exactly as i wanted, except for some issues between 501-610px width but it's okay, when I find a way to fix it, I'll update the code (fixed and updated). I had fun assembling this puzzle and learned a lot in the process. 
 
