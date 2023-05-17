@@ -107,19 +107,17 @@ section {
 
 .attribution {
     font-family: 'Montserrat', sans-serif;
-    height: 2vh;
-    /*sets the height to 2% of the viewport height to fit with the main element 
-    without creating a scroll bar*/
-    font-size: 0.5rem;
+    height: 5vh;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(158, 36%, 37%);
+      text-decoration: none;
 }
 
 @media only screen and (max-width: 699px) {
-    /*Apply the styles bellow to devices with a maximum screen of 500 pixels*/
+    /*Apply the styles bellow to devices with a maximum screen of 699 pixels*/
 
     section {
         grid-template-columns: 1fr;
