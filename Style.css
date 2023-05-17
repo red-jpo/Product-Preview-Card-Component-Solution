@@ -7,7 +7,7 @@ body {
     background-color: hsl(30, 38%, 92%);
     color: hsl(228, 12%, 48%);
     font-size: 14px;
-    min-height: 100vh;
+    height: 100vh;
     /*Ensures that the height of the webpage is always at least the height of the viewport*/
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,7 +46,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 98vh;
+    height: 95vh;
     /*sets the height to 98% of the viewport height so the footer appears in the page*/
     padding: 0 10%;
     align-self: center;
